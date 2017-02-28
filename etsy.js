@@ -22,12 +22,12 @@ console.log(britishItems);
 // Show me how to find which items are made of wood. Please console.log the ones you find.
 
 var woodItems = items.filter(function(item) {
-    return item.materials === ['wood']
+    return item.materials.indexOf('wood');
 })
 console.log(woodItems);
 // Show me how to find which items are made of eight or more materials. Please console.log the ones you find.
 var eightOrMoreMaterials = items.filter(function(item) {
-    return(item.materials.length >= [8]);
+    return(item.materials.length >= 8);
 });
 
 eightOrMoreMaterials.forEach(function(item) {
